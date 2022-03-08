@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.navcontainer{
+    height: 15vh;
+    background: gray;
+    width: 80%;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* border: 2px solid red; */
+
+}
+.navcontainer .navwrapper{
+      display: flex;
+      flex-direction: row;
+      height: 12vh;
+      margin-top: 1%;
+      /* border: 2px solid red; */
+      position: relative;
+
+}
+.navcontainer .navwrapper .navlogo{
+    /* border: 2px solid red; */
+    height: 70%;
+    margin-top: 6px;
+}
+.navcontainer .navwrapper .navlogo img{
+    height: 100%;
+    width: 100%;
+}
+.navcontainer .navwrapper .navabout{
+    /* border: 2px solid rgb(0, 255, 21); */
+    width:70% ;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: right;
+
+}
+.navcontainer .navwrapper .navabout div{
+    height: 100%;
+    width: 200px;
+    /* border: 2px solid rgb(7, 1, 1); */
+    display: flex;
+
+}
+.navcontainer .navwrapper .navabout div.icon{
+  /* border: 2px solid red; */
+  width: 23%;
+  padding:8% 0px 0px 10%;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffae02;
+  box-sizing: border-box;
+}
+.navcontainer .navwrapper .navabout div.icon2
+{
+    margin-right: -20px;
+}
+.navcontainer .navwrapper .navabout div .text{
+    width: 70%;
+    height: 80%;
+    /* border: 2px solid rgb(195, 0, 255); */
+    flex-direction: column;
+}
+
+.navcontainer .navwrapper .navabout div .text .text1{
+    /* border: 2px solid red; */
+    width: 100%;
+     justify-content: center;   
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+.navcontainer .navwrapper .navabout div .text .text2{
+    /* border: 2px solid red; */
+    width: 100%;
+    justify-content: center;   
+    font-size: 14px;
+    color: #6c625a;
+}
+.navcontainer .navwrapper .navabout div .text:hover .text1+.text2{
+    color:#ffae02;
+}
+@media screen and (max-width:1000px){
+.navcontainer .navwrapper .navabout{
+  width: 80%;
+}
+}
+@media screen and (max-width:820px){
+    .navcontainer .navwrapper .navabout{
+      width: 75%;
+    }
+    .navcontainer .navwrapper .navabout div.icon2
+{
+    margin-right: 0px;
+}
+}
+
+
+@media screen and (max-width:712px){
+.navcontainer{
+    height: 22vh;
+    width: 100%;
+}
+
+.navcontainer .navwrapper{
+    height: 22vh;
+    display: flex;
+    flex-direction: column;
+}
+.navcontainer .navwrapper .navlogo{
+    height: 20%;
+    width: 25%;
+    }
+.navcontainer .navwrapper .navabout{
+        height: 70%;
+        width: 100%;
+        bottom: 0;
+}
+.navcontainer .navwrapper .navabout div{
+    flex-direction: column;
+    height: 80%;
+}
+.navcontainer .navwrapper .navabout div.icon{
+    width: 100%;
+    height: 45px;
+    padding-bottom: 0;
+    padding: 0px 0px 0px 40%;
+}
+
+.navcontainer .navwrapper .navabout div.text{
+    width: 100%;
+    height: 80%;
+}
+.navcontainer .navwrapper .navabout div.text .text1{
+    height: 70%;
+    margin-bottom: 0;
+
+}
+.navcontainer .navwrapper .navabout div.text .text2{
+    height: 70%;
+    padding-top: -30px;
+}
+}
+@media screen and (max-width:420px){
+
+}
+@media screen and (max-width:300px){
+    .navcontainer{
+        height: 12vh;
+    }
+    
+    .navcontainer .navwrapper{
+        height: 12vh;
+      
+    }
+.navcontainer .navwrapper .navlogo{
+    height: 90%;
+    width: 40%;
+}
+.navcontainer .navwrapper .navabout{
+display: none;
+}
+}
