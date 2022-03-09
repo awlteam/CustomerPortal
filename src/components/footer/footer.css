@@ -1,0 +1,129 @@
+.footercontainer {
+  height: 30vh;
+  background: #000;
+  color: white;
+}
+.footercontainer .footerwrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.footercontainer .footerwrapper .footerlogo {
+  width: 35%;
+  padding: 10px 50px 0px 20px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.footercontainer .footerwrapper .footerlogo img {
+  height: 30px;
+}
+.footercontainer .footerwrapper .footerlogo p {
+  margin: 0;
+  font-size: 14px;
+}
+.footercontainer .footerwrapper .footerabout {
+  width: 70%;
+  height: 100%;
+  display: flex;
+}
+.footercontainer .footerwrapper .footerabout .address {
+  width: 50%;
+  height: 100%;
+  padding: 0px 10px 0px 10px;
+}
+.footercontainer .footerwrapper .footerabout .address span {
+  color: #ffae02;
+}
+.footercontainer .footerwrapper .footerabout .address h2 {
+  margin: 0 auto 0px auto;
+  width: 50px;
+  border-bottom: 2px solid #ffae02;
+}
+.footercontainer .footerwrapper .footerabout .address:hover h2 {
+  width: 100px;
+  transition: all 0.6s;
+}
+.footercontainer .footerwrapper .footerabout .socialmedia {
+  width: 50%;
+  height: 100%;
+}
+.footercontainer .footerwrapper .footerabout .socialmedia h2 {
+  margin: 0 auto 0px auto;
+  width: 150px;
+  border-bottom: 2px solid #ffae02;
+}
+.footercontainer .footerwrapper .footerabout .socialmedia .socialicons {
+  font-size: 22px;
+  margin-top: 20px;
+
+}
+.footercontainer .footerwrapper .footerabout .socialmedia .socialicons a {
+  text-decoration: none;
+  color: white;
+  margin: 0px 10px 0px 20px;
+}
+.footercontainer .footerwrapper .footerabout .socialmedia .socialicons a:hover {
+  color: #ffae02;
+}
+
+
+/* ####################  media Query #####################    */  
+
+/*------------------ media query for width:900px ----------------*/
+
+@media screen and (max-width: 900px) {
+  .footercontainer .footerwrapper .footerlogo {
+    padding: 0px 0px 0px 5px;
+  }
+ 
+  .footercontainer .footerwrapper .footerabout .address {
+    width: 100%;
+  }
+  .footercontainer .footerwrapper .footerabout .address p {
+    font-size: 14px;
+  }
+  .footercontainer .footerwrapper .footerabout .socialmedia {
+    width: 100%;
+  }
+}
+
+/*------------------ media query for width:820px ----------------*/
+
+@media screen and (max-width: 820px) {
+  .footercontainer .footerwrapper .footerabout .address p {
+    margin: 0;
+  }
+}
+/*------------------ media query for width:700px ----------------*/
+
+@media screen and (max-width: 700px) {
+  .footercontainer .footerwrapper .footerlogo p {
+    font-size: 12px;
+  }
+}
+
+/*------------------ media query for width:550px ----------------*/
+
+@media screen and (max-width: 550px) {
+  .footercontainer {
+    height: 35vh;
+  }
+
+  .footercontainer .footerwrapper .footerabout .address {
+    padding: 0px;
+  }
+  .footercontainer .footerwrapper .footerabout .address p {
+    font-size: 12px;
+  }
+}
+
+/*------------------ media query for width:450px ----------------*/
+
+@media screen and (max-width: 450px) {
+  .footercontainer .footerwrapper .footerabout {
+    flex-direction: column;
+  }
+  .footercontainer .footerwrapper .footerabout .address {
+    width: 100%;
+  }
+}

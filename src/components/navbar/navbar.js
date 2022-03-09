@@ -10,7 +10,7 @@ function Navbar(){
           <div className="navcontainer">
               <div className="navwrapper">
                   <div className="navlogo">
-                      <img src={Logo} alt="" />
+                      <img src={Logo} alt="awl logo" />
                   </div>
                   <div className="navabout">
                       <div className="time">
